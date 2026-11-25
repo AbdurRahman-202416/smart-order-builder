@@ -24,9 +24,10 @@ The functions are in `src/logic/salesStats.ts`. The bot calls them through `src/
 
 ## D1. Tab B takes the last eggs while Tab A is editing
 
-When Tab A saves, the server checks the stock again. It is not enough, so the server says no and Tab A shows
-"Short: 1 egg" (with the real number). Nothing is saved on the server. The user loses nothing: the selection
-stays on the screen, so they can use fewer eggs and save again.
+Both tabs share the same server data, so Tab A usually notices at once. It shows "Short: 1 egg" (with the real
+number) and the save button is turned off. If Tab A saves before it notices, the server checks the stock again,
+refuses, and returns the same message. The user loses nothing: the selection stays on the screen, so they can
+use fewer eggs and save again.
 
 ## D2. When is the price locked?
 
