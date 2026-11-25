@@ -94,4 +94,4 @@ A model answer with a number and no tool call is thrown away.
 
 ## Hours spent
 
-TODO: write the real number here (the brief asks for actual hours).
+About 2 hours.
